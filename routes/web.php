@@ -126,3 +126,36 @@ Route::get('/latihan', function()
 	$query = App\Latihan::all(); 
 	return $query; 
 });
+
+Route::get('/latihan-1', function() 
+{ 
+	$query = App\Latihan::where('agama','=','islam') ->get(); 
+	return $query; 
+});
+
+Route::get('/latihan-2', function() 
+{ 
+	$query = App\Latihan::select('id','nama','agama')
+	->where('agama','=','islam') ->get(); 
+	return $query; 
+});
+
+Route::get('/latihan/{id}', function($id) 
+{ 
+	$query = App\Latihan::find($id);
+	return $query; 
+});
+
+Route::get('tambah-latihan', function()
+{
+	$query = New App\latihan();
+	$query -> nama    = 'Amelia ';
+	$query -> jabatan = 'Sekretaris ';
+	$query -> jk      = 'Perempuan ';
+	$query -> Alamat  = 'Lewipanjang ';
+	$query -> total_gaji = '5000000 ';
+	$query -> agama   = 'islam ';
+	$query -> save();
+	return $query;
+
+});

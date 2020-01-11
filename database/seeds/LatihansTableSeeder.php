@@ -21,7 +21,7 @@ class LatihansTableSeeder extends Seeder
         	['nama' => 'Renasya' , 'jabatan' => 'staff' , 'jk' => 'Perempuan',
         	 'alamat' => 'Rancamanyar' , 'agama' => 'Islam' , 'total_gaji' => '5000.000'],
         	['nama' => 'Siti' , 'jabatan' => 'staff' , 'jk' => 'Perempuan',
-        	 'alamat' => 'Tarate' , 'agama' => 'Islam' , 'total_gaji' => '5000.000']
+        	 'alamat' => 'Tarate' , 'agama' => 'kristen' , 'total_gaji' => '5000.000']
 
         ];
 
